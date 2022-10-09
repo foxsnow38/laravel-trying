@@ -12,4 +12,8 @@ class Food extends Model
 
     public $table = "foods";
     public $guarded = [];
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

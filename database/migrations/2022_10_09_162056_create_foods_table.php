@@ -22,6 +22,7 @@ class CreateFoodsTable extends Migration
             $table->decimal("calories");
             $table->decimal("qty");
             $table->string("um");
+            $table->unsignedBigInteger('user_id');
             $table->timestamps();
         });
     }
