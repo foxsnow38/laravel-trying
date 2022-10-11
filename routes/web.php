@@ -16,3 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get("users", function () {
+    return view('users', ["name" => 'peter']);
+});
+Route::get("users/{name}", function ($user) {
+    return view('users', ["name" => $user]);
+});
+
+Route::get("users/{name}/{veli}", function ($name, $veli) {
+
+    return view('users', ["name" => $veli, "veli" => $name]);
+});
+Route::get("array",  function () {
+
+    $var = array('ali', 'mahmut', 'kerim');
+    dd($var);
+});

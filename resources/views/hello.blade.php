@@ -8,11 +8,11 @@
     <title>Document</title>
 </head>
 
-<x-header data="users Component Header" />
-
 <body>
 
-    <h1>Welcome file</h1>
+    <h1>`
+        Hello
+    </h1>
 </body>
 
 </html>
